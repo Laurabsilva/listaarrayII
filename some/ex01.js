@@ -5,9 +5,4 @@ const produtos = [
   { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true }
 ];
 
-const estoquetotal = produtos.reduce((acumulador, item) => {
-    return acumulador + item.estoque;
-}, 0); 
-
-console.log("Quantidade de itens em estoque =", estoquetotal);
-console.log("\n");
+console.log(produtos.some(produto => produto.preco > 3000)); 

@@ -5,3 +5,5 @@ const produtos = [
   { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true }
 ];
 
+
+console.log(produtos.every(produto => produto.estoque > 0));
